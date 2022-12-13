@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "group:all",
+    "schedule:weekly"
+  ],
+  "patch": {
+    "enabled": false
+  },
+  "reviewers": [
+    "duplabe"
+  ],
+  "postUpdateOptions": [
+    "helmUpdateSubChartArchives"
+  ],
+  "addLabels": [
+    "renovate"
+  ]
+}
