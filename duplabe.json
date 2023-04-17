@@ -5,7 +5,7 @@
     "group:all"
   ],
   "schedule": [
-    "before 6am on Saturday"
+    "before 3am on Friday"
   ],
   "patch": {
     "enabled": false
