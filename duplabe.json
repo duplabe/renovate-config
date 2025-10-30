@@ -5,12 +5,23 @@
     "group:all",
     "schedule:daily"
   ],
-  "patch": {
-    "enabled": false
-  },
-  "digest": {
-    "enabled": false
-  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    }
+  ],
   "reviewers": [
     "duplabe"
   ],
