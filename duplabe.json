@@ -5,6 +5,12 @@
     "group:all",
     "schedule:daily"
   ],
+  "reviewers": [
+    "duplabe"
+  ],
+  "addLabels": [
+    "renovate"
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -13,27 +19,20 @@
         "pin",
         "digest"
       ],
-      "automerge": true,
-      "ignoreTests": true
+      "automerge": true
     },
     {
       "matchDepTypes": [
         "devDependencies"
       ],
-      "automerge": true,
-      "ignoreTests": true
+      "automerge": true
     }
   ],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
-    "automergeType": "pr",
-    "platformAutomerge": false
+    "automergeType": "pr"
   },
-  "reviewers": [
-    "duplabe"
-  ],
-  "addLabels": [
-    "renovate"
-  ]
+  "ignoreTests": true,
+  "platformAutomerge": false
 }
