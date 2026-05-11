@@ -33,14 +33,9 @@
       "matchManagers": [
         "gomod"
       ],
-      "matchDepNames": [
-        "go"
-      ],
-      "matchDepTypes": [
-        "golang"
-      ],
       "postUpdateOptions": [
-        "gomodTidy"
+        "gomodTidy",
+        "gomodUpdateImportPaths"
       ]
     }
   ],
@@ -50,5 +45,6 @@
     "automergeType": "pr"
   },
   "ignoreTests": true,
-  "platformAutomerge": false
+  "platformAutomerge": false,
+  "minimumReleaseAge": "14 days"
 }
