@@ -2,14 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "group:all"
-  ],
-  "schedule": [
-    "every 1 hour"
+    "group:allNonMajor"
   ],
   "reviewers": [
     "duplabe"
   ],
+  "assignees": [
+    "duplabe"
+  ],
+  "assignAutomerge": true,
   "addLabels": [
     "renovate"
   ],
@@ -37,16 +38,20 @@
         "gomodTidy",
         "gomodUpdateImportPaths"
       ]
+    },
+    {
+      "matchUpdateTypes": [
+        "digest",
+        "pin"
+      ],
+      "minimumReleaseAge": null
     }
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true,
-    "automergeType": "pr"
+    "automerge": true
   },
   "platformAutomerge": true,
   "minimumReleaseAge": "14 days",
-  "vulnerabilityAlerts": {
-    "minimumReleaseAge": null
-  }
+  "minimumReleaseAgeBehaviour": "timestamp-optional"
 }
