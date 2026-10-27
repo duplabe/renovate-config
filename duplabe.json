@@ -53,5 +53,8 @@
   },
   "platformAutomerge": true,
   "minimumReleaseAge": "14 days",
-  "minimumReleaseAgeBehaviour": "timestamp-optional"
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
+  "env": {
+    "GOPRIVATE": "github.com/duplabe"
+  }
 }
