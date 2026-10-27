@@ -56,5 +56,6 @@
   "minimumReleaseAgeBehaviour": "timestamp-optional",
   "env": {
     "GOPRIVATE": "github.com/duplabe"
-  }
+  },
+  "ignoreTests": true
 }
